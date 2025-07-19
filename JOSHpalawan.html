@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wallet Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f3f3f3;
+      color: #333;
+    }
+
+    .header {
+      padding: 20px;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .greeting {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .verified {
+      color: green;
+      font-weight: bold;
+    }
+
+    .upgrade {
+      color: goldenrod;
+      cursor: pointer;
+    }
+
+    .balance-section {
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .balance-section h2 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    .points {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .balance-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .balance-buttons button {
+      flex: 1;
+      padding: 10px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      background: white;
+      color: #2ecc71;
+      cursor: pointer;
+    }
+
+    .section-title {
+      margin: 20px;
+      font-weight: bold;
+    }
+
+    .transact-list {
+      display: flex;
+      overflow-x: auto;
+      padding: 0 20px;
+      gap: 10px;
+    }
+
+    .transact-card {
+      min-width: 200px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .transact-card strong {
+      color: #2c3e50;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .feature-item {
+      text-align: center;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .feature-icon {
+      background: #f1f1f1;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: white;
+      border-top: 1px solid #ccc;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+
+    .footer-item {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .footer-item span {
+      display: block;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="greeting">
+      👤 Good Morning Alfred!
+    </div>
+    <div>
+      <span class="verified">✔ Verified</span> |
+      <span class="upgrade">Upgrade</span>
+    </div>
+  </div>
+
+  <div class="balance-section">
+    <h2>PHP 1,965.05</h2>
+    <div class="points">🎁 200 Wallet Points</div>
+    <div class="balance-buttons">
+      <button>Cash In</button>
+      <button>Cash Out</button>
+    </div>
+  </div>
+
+  <div class="section-title">Transact Again</div>
+  <div class="transact-list">
+    <div class="transact-card">
+      <strong>QR Send to Kharyll P.</strong><br>
+      ********5515
+    </div>
+    <div class="transact-card">
+      <strong>Send to GCash</strong><br>
+      ********0590
+    </div>
+    <div class="transact-card">
+      <strong>Pay BPI</strong><br>
+      ********2345
+    </div>
+  </div>
+
+  <div class="section-title">Services</div>
+  <div class="features-grid">
+    <div class="feature-item">
+      <div class="feature-icon">💸</div>
+      Send Money
+    </div>
+
+  <style>
+    /* ...your existing CSS... */
+
+    /* Responsive styles for mobile */
+    @media (max-width: 600px) {
+      .balance-section {
+        margin: 10px;
+        padding: 15px;
+        border-radius: 12px;
+      }
+      .section-title {
+        margin: 15px 10px 10px 10px;
+        font-size: 16px;
+      }
+      .transact-list {
+        gap: 8px;
+        padding: 0 10px;
+      }
+      .transact-card {
+        min-width: 140px;
+        font-size: 13px;
+        padding: 8px;
+      }
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+      }
+      .feature-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+      }
+      .footer {
+        font-size: 10px;
+        padding: 6px 0;
+      }
+      .header {
+        padding: 12px;
+        font-size: 15px;
+      }
+    }
+  </style>
